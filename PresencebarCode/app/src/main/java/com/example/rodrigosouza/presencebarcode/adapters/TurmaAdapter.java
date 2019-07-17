@@ -36,7 +36,6 @@ public class TurmaAdapter extends RecyclerView.Adapter<TurmaAdapter.ViewHolder> 
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_list_turmas, viewGroup, false);
-
         ViewHolder vh = new ViewHolder(view);
 
         return vh;

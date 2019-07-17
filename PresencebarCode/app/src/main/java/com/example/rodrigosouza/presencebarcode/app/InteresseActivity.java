@@ -35,9 +35,9 @@ public class InteresseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_interesse);
         securityPreferences = new SecurityPreferences(this);
-        apiService = new ApiService(securityPreferences.getSavedString(Constants.TOKEN));
         mRecyclerView = findViewById(R.id.rv_ausencias);
         mRecyclerView.setHasFixedSize(true);
+        apiService = new ApiService(securityPreferences.getSavedString(Constants.TOKEN));
         setupViews();
     }
 
